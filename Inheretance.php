@@ -1,5 +1,6 @@
 <?php
 
+//Inheretance: in which child can access properties and methods of parent
 class Base{
     public $name;
     public $age;
