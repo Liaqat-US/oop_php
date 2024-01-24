@@ -1,6 +1,7 @@
 <?php
 
 //Abstract: we cann't make obj of that class.
+//used for secure purpose
 //One abstract method must.
 //we can declare in prop and method in abstract class but cannot define
 //we can access properties and methods through child class
