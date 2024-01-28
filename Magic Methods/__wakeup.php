@@ -1,14 +1,14 @@
 <?php
 
-//__sleep: when we serialize obj it will call
+//__wakeup: when we unserialize obj it will call
 
 class base{
     private $name = 'liaqat';
     Private $age = 20;
     public $email = 'liaqat@gmail.ccom';
 
-    public function __sleep(){
-        return array('name','email');
+    public function __wakeup(){
+        echo 'object is unserialized.<br>';
     }
 }
 
@@ -16,7 +16,8 @@ $b = new base();
 
 $s = serialize ($b);
 
+$un = unserialize($s);
 
-echo $s;
+print_r($un);
 
 ?>
